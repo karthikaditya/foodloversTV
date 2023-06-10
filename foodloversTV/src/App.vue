@@ -4,7 +4,7 @@ import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
@@ -14,34 +14,31 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <TheWelcome />
-  </main>
+  </main> -->
+  <iframe src="https://www.google.com/maps/d/embed?mid=1ekHqxQnhoTzFedEyZhLkc99udUkh9Bw&ehbc=2E312F" frameborder="0"
+    marginheight="0" marginwidth="0" width="100%" height="100%" scrolling="auto"></iframe>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+html {
+  overflow: auto;
 }
 
-.logo {
+html,
+body,
+div,
+iframe {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  border: none;
+}
+
+iframe {
   display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+  width: 100%;
+  border: none;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 </style>
